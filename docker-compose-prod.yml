@@ -1,0 +1,10 @@
+services:
+  frontend-new:
+    image: teanchai1112/234-deploylab-frontend:latest
+    pull_policy: always
+    ports:
+      - "8084:80" 
+    environment:
+      - VITE_GRAPHQL_URI=http://<IP_VM>:8083/graphql  # ชี้ไปหา Backend ตัวใหม่
+      - VITE_SERVER_URI=http://<IP_VM>:8083
+    restart: unless-stopped
