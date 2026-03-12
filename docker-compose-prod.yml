@@ -3,7 +3,7 @@ services:
     image: teanchai1112/234-deploylab-frontend:latest
     pull_policy: always
     ports:
-      - "8084:80" 
+      - "8084:8080" 
     environment:
       - VITE_GRAPHQL_URI=http://100.54.11.47/:8083/graphql  # ชี้ไปหา Backend ตัวใหม่
       - VITE_SERVER_URI=http://100.54.11.47/:8083
