@@ -5,6 +5,6 @@ services:
     ports:
       - "8084:80" 
     environment:
-      - VITE_GRAPHQL_URI=http://<IP_VM>:8083/graphql  # ชี้ไปหา Backend ตัวใหม่
-      - VITE_SERVER_URI=http://<IP_VM>:8083
+      - VITE_GRAPHQL_URI=http://100.54.11.47/:8083/graphql  # ชี้ไปหา Backend ตัวใหม่
+      - VITE_SERVER_URI=http://100.54.11.47/:8083
     restart: unless-stopped
